@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>文字数カウンター</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZZRB24T8SZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZZRB24T8SZ");
+    </script>
+  </head>
+  <body>
+    <h1>文字数カウントツール(テスト2)</h1>
+    <textarea
+      id="text"
+      rows="10"
+      cols="50"
+      placeholder="ここに入力してね"
+    ></textarea>
+    <p>文字数：<span id="count">0</span></p>
+    <a href="gacha-gacha/index.html">ガチャガチャ</a>
+
+    <script>
+      const textarea = document.getElementById("text");
+      const count = document.getElementById("count");
+      textarea.addEventListener("input", () => {
+        count.textContent = textarea.value.length;
+      });
+    </script>
+  </body>
+</html>
