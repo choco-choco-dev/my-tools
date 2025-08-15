@@ -1,22 +1,23 @@
-/** ヘッダー選択  */
+////////////////////////////
+/// 要素
+////////////////////////////
 
-const diva = document.getElementsByTagName("div");
-
+/** ヘッダー */
 const header = document.getElementById("header");
-document.getElementById("header-div").addEventListener("click", click());
 
-function click() {
-  console.log("クリック");
+////////////////////////////
+/// イベント
+////////////////////////////
+
+/** ヘッダーをクリック */
+header.addEventListener("click", headerClick);
+
+////////////////////////////
+/// 関数
+////////////////////////////
+
+/** ヘッダーをクリック */
+function headerClick() {
+  /** トップページに遷移  */
+  window.location.href = "../";
 }
-// document.addEventListener("DOMContentLoaded", () => {
-//   /** ヘッダー選択  */
-
-//   const diva = document.getElementsByTagName("div");
-
-//   const header = document.getElementById("#header");
-//   document.getElementById("#header-div").addEventListener("click", click());
-
-//   function click() {
-//     console.log("クリック");
-//   }
-// });
