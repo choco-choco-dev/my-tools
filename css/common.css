@@ -1,18 +1,18 @@
-#header {
+body {
+  font-family: "メイリオ";
+}
+
+#header-div {
   background-color: aquamarine;
   height: 100px;
   display: table;
   width: 100%;
 }
 
-#header > span {
+#header {
   font-size: xxx-large;
   font-weight: 600;
   display: table-cell;
   vertical-align: middle;
   padding-left: 10px;
-}
-
-.item {
-  padding: 10px;
 }
