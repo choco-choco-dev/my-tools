@@ -2,7 +2,15 @@
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  border: solid;
+  border: 1px solid;
   border-color: gray;
   border-radius: 10px;
+  box-shadow: 0 2px 3px lightgray, 2px 0 3px lightgray, 0 -2px 3px lightgray,
+    -2px 0 3px lightgray;
+  cursor: pointer;
+}
+
+.item:active {
+  box-shadow: 0 0 white;
+  background-color: #f0f0f0;
 }

@@ -1,9 +1,5 @@
-body {
-  font-family: "メイリオ";
-}
-
 #header-div {
-  background-color: aquamarine;
+  background-color: #32d232;
   height: 50px;
   display: flex;
   align-items: center;
@@ -11,8 +7,15 @@ body {
 }
 
 #header {
-  font-size: x-large;
+  font-size: 24px;
   font-weight: 600;
-  padding-left: 10px;
+  margin-left: 10px;
+  padding: 2px;
   cursor: pointer;
+}
+
+#header:active {
+  background-color: #328c32;
+  font-size: 23px;
+  padding: 3px;
 }
