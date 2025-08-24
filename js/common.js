@@ -1,4 +1,11 @@
 ////////////////////////////
+/// 定義
+////////////////////////////
+
+/** ルート相対パス  */
+const urlRoot = "../";
+
+////////////////////////////
 /// 要素
 ////////////////////////////
 
@@ -19,5 +26,5 @@ header.addEventListener("click", headerClick);
 /** ヘッダーをクリック */
 function headerClick() {
   /** トップページに遷移  */
-  window.location.href = "../";
+  window.location.href = urlRoot;
 }
