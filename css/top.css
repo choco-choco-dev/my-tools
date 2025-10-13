@@ -16,7 +16,11 @@
   flex-shrink: 0;
 }
 
+.item:hover {
+  background-color: #92ff92;
+}
+
 .item:active {
   box-shadow: 0 0 white;
-  background-color: #f0f0f0;
+  background-color: #328c32;
 }
