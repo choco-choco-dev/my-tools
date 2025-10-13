@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
     />
     <title>文字数カウンター</title>
+    <link rel="stylesheet" href="../../css/common.css" type="text/css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -23,6 +24,9 @@
     </script>
   </head>
   <body>
+    <div id="header-div">
+      <span id="header" ontouchstart="">ツール置き場</span>
+    </div>
     <h1>文字数カウントツール(テスト2)</h1>
     <textarea
       id="text"
@@ -31,7 +35,6 @@
       placeholder="ここに入力してね"
     ></textarea>
     <p>文字数：<span id="count">0</span></p>
-    <a href="../gacha-gacha/">ガチャガチャ</a>
 
     <script>
       const textarea = document.getElementById("text");
@@ -40,5 +43,6 @@
         count.textContent = textarea.value.length;
       });
     </script>
+    <script src="../../js/common.js"></script>
   </body>
 </html>
