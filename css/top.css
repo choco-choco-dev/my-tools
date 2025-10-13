@@ -1,19 +1,13 @@
-#item-area {
-  display: flex;
-  justify-content: space-around;
-}
-
 .item {
   padding: 10px;
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: 1px solid;
   border-color: gray;
   border-radius: 10px;
   box-shadow: 0 2px 3px lightgray, 2px 0 3px lightgray, 0 -2px 3px lightgray,
     -2px 0 3px lightgray;
   cursor: pointer;
-  text-align: center;
-  flex-shrink: 0;
 }
 
 .item:hover {
