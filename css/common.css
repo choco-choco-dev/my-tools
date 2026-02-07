@@ -1,3 +1,15 @@
+/* 全体 */
+/* リンクっぽく装飾*/
+.link {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.link:active {
+  color: red;
+}
+
 /* ヘッダー */
 #header-div {
   background-color: #32d232;
@@ -19,4 +31,14 @@
   background-color: #328c32;
   font-size: 23px;
   padding: 3px;
+}
+
+/* パンくずリスト */
+#breadcrumbs_div {
+  margin: 5px;
+}
+
+#breadcrumbs_div span {
+  margin-left: 2px;
+  margin-right: 2px;
 }
