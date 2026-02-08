@@ -1,0 +1,5 @@
+/* テキストエリア */
+#text {
+  width: -webkit-fill-available;
+  min-height: 120px;
+}
