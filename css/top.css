@@ -45,9 +45,13 @@
 }
 
 /* アイコン部分 */
-.tool-card .icon {
+/* .tool-card .icon {
   font-size: 3rem;
   margin-bottom: 15px;
+} */
+
+.tool-card .icon img {
+  max-height: 75px;
 }
 
 /* タイトル */
