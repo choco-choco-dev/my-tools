@@ -8,6 +8,9 @@ const urlMojiCounter = urlRoot + "items/moji-counter/";
 /** ガチャガチャページ相対パス */
 const urlGachaGacha = urlRoot + "items/gacha-gacha/";
 
+/** 時間計算ページ相対パス */
+const urlTimeCalculator = urlRoot + "items/time-calculator/";
+
 ////////////////////////////
 /// 要素
 ////////////////////////////
@@ -18,6 +21,9 @@ const btnMojiCounter = document.getElementById("btn-moji-counter");
 /** ガチャガチャボタン */
 const btnGachaGacha = document.getElementById("btn-gacha-gacha");
 
+/** 時間計算ボタン */
+const btnTimeCalculator = document.getElementById("btn-time-calculator");
+
 ////////////////////////////
 /// イベント
 ////////////////////////////
@@ -27,6 +33,9 @@ btnMojiCounter.addEventListener("click", btnMojiCounterClick);
 
 /** ガチャガチャボタンをクリック */
 btnGachaGacha.addEventListener("click", btnGachaGachaClick);
+
+/** 時間計算ボタンをクリック */
+btnTimeCalculator.addEventListener("click", btnTimeCalculatorClick);
 
 ////////////////////////////
 /// 関数
@@ -40,6 +49,12 @@ function btnMojiCounterClick() {
 
 /** ガチャガチャボタンをクリック */
 function btnGachaGachaClick() {
-  /** 文字カウンターページに遷移  */
+  /** ガチャガチャページに遷移  */
   window.location.href = urlGachaGacha;
+}
+
+/** 時間計算ボタンをクリック */
+function btnTimeCalculatorClick() {
+  /** 時間計算ページに遷移  */
+  window.location.href = urlTimeCalculator;
 }

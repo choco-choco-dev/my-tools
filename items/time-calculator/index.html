@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+    />
+    <title>時間計算ツール</title>
+    <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/time-calculator.css" type="text/css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZZRB24T8SZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZZRB24T8SZ");
+    </script>
+  </head>
+  <body>
+    <div id="header-div">
+      <span id="header" ontouchstart="">ツール置き場</span>
+    </div>
+    <div id="breadcrumbs_div">
+      <span id="breadcrumbs_top" class="link" ontouchstart="">TOP</span>
+      <span>/</span>
+      <span>時間計算ツール</span>
+    </div>
+    <h1>時間計算ツール</h1>
+    <!-- <textarea id="text" placeholder="ここに入力してね"></textarea>
+    <p>文字数：<span id="count">0</span></p> -->
+    <div class="container">
+      <h2>時間計算ツール</h2>
+      <div class="input-group">
+        <label>元の時間</label>
+        <input type="time" id="baseTime" />
+      </div>
+      <div class="input-group">
+        <label>計算方法</label>
+        <select id="operation">
+          <option value="add">足す</option>
+          <option value="subtract">引く</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>加減する時間（時間）</label>
+        <input type="number" id="addHours" min="0" value="0" />
+      </div>
+      <div class="input-group">
+        <label>加減する時間（分）</label>
+        <input type="number" id="addMinutes" min="0" value="0" />
+      </div>
+      <button onclick="calculateTime()">計算する</button>
+      <div class="result" id="result"></div>
+    </div>
+    <script src="/js/common.js"></script>
+    <script src="js/time-calculator.js"></script>
+  </body>
+</html>
