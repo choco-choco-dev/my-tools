@@ -8,6 +8,7 @@
     />
     <title>ガチャガチャ</title>
     <link rel="stylesheet" href="/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/gacha-gacha.css" type="text/css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -33,14 +34,42 @@
       <span>ガチャガチャ</span>
     </div>
     <h1>ガチャガチャ</h1>
+    <!-- 本体 -->
     <div>
-      <div>名前</div>
-      <div>個数</div>
-    </div>
-    <div>
-      <div><input type="text" /></div>
-      <div><input type="number" /></div>
+      <!-- 追加エリア -->
+      <div>
+        <div>名前</div>
+        <div>
+          <input type="text" id="itemName" maxlength="50" />
+        </div>
+        <div>個数</div>
+        <div>
+          <input type="number" id="itemNum" />
+        </div>
+        <div>
+          <button onclick="add()">追加する</button>
+        </div>
+      </div>
+      <!-- 中身エリア -->
+      <div>
+        <ul>
+          <li>
+            <p>テスト：<span>0</span></p>
+          </li>
+        </ul>
+      </div>
+      <!-- 取り出しエリア -->
+      <div>
+        <div>
+          <button onclick="play()">引く</button>
+        </div>
+        <div>
+          <p>結果</p>
+          <span>0</span>
+        </div>
+      </div>
     </div>
     <script src="/js/common.js"></script>
+    <script src="js/gacha-gacha.js"></script>
   </body>
 </html>

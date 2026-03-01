@@ -1,0 +1,12 @@
+/* 入力欄、ボタン*/
+input,
+button {
+  width: -webkit-fill-available;
+}
+
+/* ボタン　*/
+button {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
